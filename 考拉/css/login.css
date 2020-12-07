@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+.head {
+    line-height: 100px;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+
+.w {
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+}
+
+.w1 {
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.login {
+    float: left;
+    margin-top: 20px;
+    display: block;
+    width: 330px;
+    height: 65px;
+    background: url(../img/t3.png) no-repeat left center;
+    background-size: auto 65px;
+}
+
+.tu11 {
+    float: right;
+    width: 504px;
+    height: 100px;
+    background: url(../img/t4.png) no-repeat;
+    background-size: 504px 100px;
+}
+
+.bd {
+    overflow: hidden;
+    height: 600px;
+    background-color: #f8f8f8;
+}
+
+.bd-left {
+    float: left;
+    width: 400px;
+    height: 360px;
+    background: url(../img/t2.png) no-repeat center center;
+    background-size: 400px 203px;
+}
+
+.conent {
+    position: relative;
+    margin: 100px 0px 0px 647px;
+    width: 350px;
+    height: 330px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.dingtu {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    width: 84px;
+    height: 18px;
+    background: url(../img/t1.png) no-repeat right center;
+    background-size: cover;
+}
+
+.dingtu1 {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url(../img/f22b0657-dac4-4b0d-849f-92a1d0987207.png) no-repeat center center;
+    background-size: cover;
+}
+
+h4 {
+    margin: 35px 0 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.xingx {
+    margin: 10px auto 0;
+    margin-bottom: 10px;
+    width: 270px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.xingx a {
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+
+.xingx a:hover {
+    color: red;
+}
+
+.concent-bd {
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 36px;
+    border-radius: 18px;
+}
+
+.ding {
+    position: absolute;
+    display: inline-block;
+    top: 6px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.t1 {
+    padding-left: 40px;
+    width: 227px;
+    height: 32px;
+    border-radius: 18px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: transparent;
+}
+
+.t1:focus {
+    border-color: #246ed6;
+}
+
+.ding-a {
+    position: absolute;
+    padding-left: 5px;
+    top: 7px;
+    left: 170px;
+    display: inline-block;
+    width: 81px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-left: 1px solid #ccc;
+    font-size: 12px;
+    color: #000;
+}
+
+.ding-a:hover {
+    color: red;
+}
+
+.btn {
+    margin: 0 0 15px 40px;
+    cursor: pointer;
+    width: 270px;
+    height: 36px;
+    text-align: center;
+    height: 36px;
+    background-color: red;
+    color: white;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+}
+
+.wenzi {
+    margin: 0 auto 15px;
+    width: 270px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    color: #999;
+}
+
+.wenzi a {
+    color: #999;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.icon {
+    padding-top: 5px;
+    border-top: 1px solid #ccc;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.icon a {
+    display: inline-block;
+    width: 30px;
+    height: 23px;
+    background: url(../img/jingli.png) no-repeat 1px 0px;
+    background-size: cover;
+}
+
+.icon a:nth-child(2) {
+    background: url(../img/jingli.png) no-repeat -32px 0px;
+    background-size: cover;
+}
+
+.icon a:nth-child(3) {
+    background: url(../img/jingli.png) no-repeat -64px 0px;
+    background-size: cover;
+}
+
+.icon a:nth-child(4) {
+    background: url(../img/jingli.png) no-repeat -96px 0px;
+    background-size: cover;
+}
+
+.icon a:nth-child(5) {
+    background: url(../img/jingli.png) no-repeat -163px 0px;
+    background-size: cover;
+}
+
+.foot-btm {
+    background-color: #fff;
+    height: 152px;
+}
+
+.foot-btm-hd {
+    height: 152px;
+}
+
+.foot-btm-hd a {
+    color: #666;
+}
+
+.foot-btm-hd ul {
+    margin: 20px 0 10px 140px;
+    width: 800px;
+    height: 20px;
+}
+
+.foot-btm-hd-div {
+    margin: auto;
+    width: 900px;
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+}
+
+.foot-btm-hd-div span {
+    margin-left: 20px;
+    color: #666;
+}
+
+.foot-btm-hd li {
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.foot-btm-hd .foot-btm-hd-uul {
+    margin-top: 10px;
+    margin-left: 130px;
+    width: 900px;
+    height: 20px;
+}
+
+.foot-btm-hd-uul li {
+    float: left;
+    margin: 0 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.foot-btm-hd-uul li span {
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.foot-btm-hd a:hover {
+    text-decoration: underline;
+}
+
+.foot-btm-hd-div1 {
+    clear: both;
+    position: relative;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.img11 {
+    width: 80px;
+    height: 30px;
+}
+
+.img22 {
+    margin-left: 10px;
+    width: 28px;
+    height: 30px;
+}

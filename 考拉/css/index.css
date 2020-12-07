@@ -1,0 +1,1425 @@
+    body {
+        width: 1520px;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        color: #999;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    .nav {
+        height: 30px;
+        background-color: #000;
+        border-bottom: 1px solid #ededee;
+        color: #999;
+    }
+    
+    .w {
+        position: relative;
+        margin: auto;
+        width: 1090px;
+    }
+    
+    .nav-l li,
+    .nav-r li {
+        float: left;
+        margin-right: 20px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .nav-l .shou {
+        position: relative;
+    }
+    
+    .sanjiao,
+    .xian {
+        z-index: 4;
+        position: absolute;
+    }
+    
+    .sanjiao {
+        display: none;
+        width: 0;
+        height: 0;
+        top: 25px;
+        left: 25%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent rgba(236, 228, 228, 0.877) transparent;
+    }
+    
+    .xian {
+        display: none;
+        line-height: 1;
+        padding-top: 10px;
+        top: 45px;
+        left: -35px;
+        width: 120px;
+        height: 151px;
+        background-color: rgba(236, 228, 228, 0.877);
+    }
+    
+    .xian img {
+        vertical-align: middle;
+        width: 106px;
+        margin-bottom: 10px;
+    }
+    
+    .xian span {
+        font-size: 16px;
+        color: black;
+    }
+    
+    .shou:hover .xian,
+    .shou:hover .sanjiao {
+        display: block;
+    }
+    
+    .nav-l li {
+        line-height: 32px;
+        font-size: 12px;
+    }
+    
+    .nav-l li a:hover {
+        color: #fff;
+    }
+    
+    .nav-r li {
+        margin-right: 10px;
+        width: 80px;
+    }
+    
+    .nav-r li a:hover {
+        color: #fff;
+    }
+    
+    .nav-r {
+        float: right;
+    }
+    
+    .nav-r-1 a {
+        display: block;
+        width: 100px;
+        height: 30px;
+        line-height: 32px;
+    }
+    
+    .nav-r-1 .d1,
+    .nav-r-1 span {
+        height: 30px;
+        margin-left: 15px;
+        float: left;
+    }
+    
+    .nav-r-1 .d1 {
+        margin-left: 0;
+        transition: all .2s;
+    }
+    
+    .nav-r-1 dl {
+        z-index: 5;
+        position: relative;
+        display: none;
+        padding-left: 10px;
+        width: 110px;
+        text-align: left;
+        background-color: #FFF;
+        border: 1px solid #ccc;
+        border-top: 0;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+    }
+    
+    .nav-r-1 .s1 {
+        margin: 0;
+        margin-right: 10px;
+    }
+    
+    .nav-r-1 .xia {
+        width: 90px;
+        border-bottom: 1px solid rgb(216, 215, 215);
+    }
+    
+    .nav-r-1:hover .d1 {
+        transform: rotate(180deg);
+    }
+    
+    .nav-r-1:hover dl {
+        display: block;
+    }
+    
+    .nav-r .nav-r-1:hover .a1 {
+        color: red;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .nav-r-1 dl a:hover {
+        color: red;
+    }
+    
+    .search {
+        margin-top: 20px;
+        height: 70px;
+    }
+    
+    .search a {
+        display: block;
+        float: left;
+        width: 330px;
+        height: 65px;
+        background: url(https://kaola-haitao.oss.kaolacdn.com/271c7d10-5167-443a-afe5-9f0729964b5e.png) no-repeat;
+        background-size: 210px 65px;
+    }
+    
+    .search-m {
+        float: left;
+        margin-top: 10px;
+        width: 510px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        border: 2px solid red;
+    }
+    
+    .search-m span {
+        margin-left: 10px;
+        width: 14px;
+        height: 14px;
+        color: #ccc;
+    }
+    
+    .search-m input {
+        margin-left: 4px;
+        width: 410px;
+        height: 24px;
+        outline: none;
+        border: none;
+    }
+    
+    .search-m button {
+        float: right;
+        width: 60px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        color: #fff;
+        background-color: red;
+    }
+    
+    .search-r {
+        cursor: pointer;
+        float: left;
+        margin: 10px 0 10px 40px;
+        width: 110px;
+        height: 40px;
+        border-radius: 36px;
+        border: 2px solid red;
+    }
+    
+    .search-r .s2,
+    .search-r span {
+        float: left;
+        display: block;
+        margin: 10px 0 0 20px;
+        width: 20px;
+        height: 20px;
+        color: red;
+    }
+    
+    .search-r span {
+        margin: 10px 0 0 10px;
+        width: 48px;
+        height: 36px;
+        color: #000;
+    }
+    
+    .search-r:hover span {
+        color: red;
+    }
+    
+    .search-bd {
+        margin-top: 15px;
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .search-bd dl {
+        position: absolute;
+        z-index: 3;
+        float: left;
+        width: 164px;
+        height: 532px;
+        background-color: red;
+    }
+    
+    .search-bd dd {
+        position: relative;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+    
+    .search-bd dt,
+    .search-bd a {
+        display: block;
+        padding: 0 1px 0 10px;
+        width: 151px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .search-bd dt span,
+    dd a span:first-child {
+        margin-right: 20px;
+    }
+    
+    dd a span:last-child {
+        float: right;
+        margin-right: 2px;
+    }
+    
+    .search-bd dd a:hover {
+        background-color: #fff;
+        color: red;
+    }
+    
+    .search-bd-r {
+        float: left;
+        width: 550px;
+        height: 40px;
+        margin-left: 200px;
+    }
+    
+    .search-bd-r li a {
+        display: inline;
+        color: #000;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    
+    .search-bd-r li {
+        float: left;
+        margin-right: 20px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .search-bd-r .red {
+        color: red;
+    }
+    
+    .search-bd-r li a:hover {
+        color: red;
+    }
+    
+    .search-r1 {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: -926px;
+        width: 924px;
+        height: 490px;
+        border: 1px solid red;
+        background-color: pink;
+    }
+    
+    .search-bd dd a:hover+.search-r1 {
+        display: block;
+    }
+    
+    .r2 {
+        top: -41px;
+    }
+    
+    .r3 {
+        top: -82px
+    }
+    
+    .r4 {
+        top: -123px;
+    }
+    
+    .r5 {
+        top: -164px;
+    }
+    
+    .r6 {
+        top: -205px;
+    }
+    
+    .r7 {
+        top: -246px;
+    }
+    
+    .r8 {
+        top: -287px;
+    }
+    
+    .r9 {
+        top: -328px
+    }
+    
+    .r10 {
+        top: -369px
+    }
+    
+    .r11 {
+        top: -410px
+    }
+    
+    .r12 {
+        top: -451px;
+    }
+    
+    .lunbo {
+        position: relative;
+        height: 491px;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: red;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .lun1 {
+        background: url(https://kaola-haitao.oss.kaolacdn.com/0bb3575d-be8e-4682-9466-15e41c38579bT2009221719_1920_506.jpg?x-oss-process=image/resize,w_1920/quality,q_90);
+    }
+    
+    .lun2 {
+        background: url(https://kaola-haitao.oss.kaolacdn.com/633fcece623d4595bb66dc814138f483_1920_506.png?x-oss-process=image/resize,w_1920/quality,q_90);
+    }
+    
+    .lun3 {
+        background: url(https://kaola-haitao.oss.kaolacdn.com/15a1d8a532a14e76bae443d1d4d1d00b_1920_506.png?x-oss-process=image/resize,w_1920/quality,q_90);
+    }
+    
+    .ss1,
+    .ss2 {
+        position: absolute;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .1);
+    }
+    
+    .ss1 {
+        top: 50%;
+        right: 228px;
+    }
+    
+    .ss2 {
+        top: 50%;
+        left: 26%;
+    }
+    
+    .lunbo-foot {
+        height: 44px;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    
+    .lunbo-foot-left,
+    .lunbo-foot-right {
+        float: left;
+        width: 436px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+    }
+    
+    .lunbo-foot-left a {
+        float: left;
+        display: block;
+        height: 44px;
+        margin-right: 40px;
+        color: #fff;
+    }
+    
+    .lunbo-foot-left b {
+        margin-right: 5px;
+    }
+    
+    .lunbo-foot-right {
+        float: right;
+        width: 195px;
+        line-height: 44px;
+    }
+    
+    .lunbo-foot-right span {
+        margin-right: 5px;
+        color: #fff;
+    }
+    
+    .lunbo-foot-right a {
+        color: #fff;
+    }
+    
+    .lunbo-foot-left a:hover span,
+    .lunbo-foot-right a:hover {
+        text-decoration: underline;
+    }
+    
+    .aa1 {
+        padding-top: 20px;
+        display: block;
+        height: 308px;
+        background: #f7f7f7 url(https://kaola-haitao.oss.kaolacdn.com/0f584d8e-12e0-4cba-883d-c58769340deeT2005291133_1920_308.png?x-oss-process=image/resize,w_2400,h_385/quality,q_95) no-repeat -195px center;
+    }
+    
+    .concent {
+        background-color: #f7f7f7;
+    }
+    
+    .title {
+        height: 74px;
+        padding-top: 25px;
+    }
+    
+    .title h2,
+    .title ul {
+        float: left;
+    }
+    
+    .title h2 {
+        margin-right: 15px;
+    }
+    
+    .title ul li {
+        float: left;
+        width: 56px;
+        height: 32px;
+        line-height: 45px;
+        margin-right: 24px;
+        color: #999;
+        font-size: 14px;
+    }
+    
+    .title ul li:nth-child(3) a {
+        color: #999;
+    }
+    
+    .title ul li a {
+        font-size: 14px;
+        color: red;
+    }
+    
+    .title a:hover {
+        text-decoration: underline;
+    }
+    
+    .title-a {
+        margin-top: 8px;
+        font-size: 14px;
+        float: right;
+        display: block;
+        height: 72px;
+    }
+    
+    .title-a span {
+        margin-left: 5px;
+    }
+    
+    .title-bd {
+        height: 541px;
+    }
+    
+    .title-bd-left {
+        float: left;
+        position: relative;
+        width: 330px;
+        height: 541px;
+        background: url(https://kaola-haitao.oss.kaolacdn.com/4O1yWA5GGK2deliT06U9x6wSNf_330_542T1811012029_330_542.jpg?x-oss-process=image/resize,w_330/quality,q_95);
+    }
+    
+    .title-bd-left ul {
+        position: absolute;
+        top: 75%;
+        left: 25px;
+        width: 306px;
+        height: 100px;
+    }
+    
+    .title-bd-left ul li {
+        margin-right: 10px;
+        margin-top: 10px;
+        float: left;
+        width: 82px;
+        height: 42px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 20px;
+    }
+    
+    .title-bd-left a {
+        display: block;
+        height: 42px;
+    }
+    
+    .title-bd-left a:hover {
+        color: red;
+    }
+    
+    .title-bd-m {
+        width: 549px;
+        height: 540px;
+        background-color: #fff;
+        float: left;
+    }
+    
+    .title-bd-m li {
+        float: left;
+        text-align: center;
+        border: 1px solid #e9e9e9;
+        border-width: 0 1px 1px 0;
+    }
+    
+    .title-bd-m li a {
+        display: block;
+        padding: 30px 0 0;
+        width: 273px;
+        height: 239px;
+        background: url(../img/1.jpg) no-repeat center center;
+        background-size: 180px, 144px;
+    }
+    
+    .title-bd-m li:nth-child(2) a {
+        background: url(../img/2.jpg) no-repeat center center;
+    }
+    
+    .title-bd-m li:nth-child(3) a {
+        background: url(../img/3.jpg )no-repeat center center;
+    }
+    
+    .title-bd-m li:nth-child(4) a {
+        background: url(../img/4.jpg) no-repeat center center;
+    }
+    
+    .title-bd-m h3 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0 10px;
+    }
+    
+    .title-bd-m p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 10px 14px;
+    }
+    
+    .title-bd-right {
+        margin-top: -7px;
+        float: left;
+        width: 210px;
+        height: 540px;
+        border: 1px solid #eee;
+        border-left: none;
+        background-color: #fff;
+    }
+    
+    .title-bd-right li {
+        box-sizing: border-box;
+        padding-top: 20px;
+        height: 119px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .title-bd-right li:nth-child(1) {
+        padding-top: 0;
+        height: 64px;
+    }
+    
+    .title-bd-right h3 {
+        font-size: 16px;
+        line-height: 58px;
+        padding: 0 0 0 10px;
+        color: #333;
+        font-weight: 700;
+        height: 58px;
+    }
+    
+    .title-bd-right img {
+        margin: 0 10px;
+        float: left;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .title-bd-r-m {
+        float: left;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .title-bd-r-m a {
+        display: block;
+        height: 35px;
+        overflow: hidden;
+    }
+    
+    .title-bd-r-m a:hover {
+        text-decoration: underline;
+    }
+    
+    .title-bd-r-m p {
+        margin-top: 20px;
+        color: #999;
+    }
+    
+    .title-bd-r-m p strong {
+        margin-right: 10px;
+        color: red;
+        font-size: 20px;
+    }
+    
+    .tupian {
+        margin: 50px auto;
+        width: 1090px;
+        height: 215px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+    
+    .tupian-hd {
+        font-size: 16px;
+        color: #000;
+        font-weight: 700;
+        text-indent: 20px;
+        line-height: 48px;
+        height: 48px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .tupian-bd a {
+        float: left;
+        display: block;
+        padding-top: 20px;
+        position: relative;
+        width: 217px;
+        height: 147px;
+        text-align: center;
+        border-right: 1px solid #ccc;
+    }
+    
+    .tupian-bd a:nth-child(5) {
+        border-right: none;
+    }
+    
+    .dingwei {
+        display: none;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 4px;
+        right: 8px;
+    }
+    
+    .dingwei img {
+        width: 25px;
+    }
+    
+    .tupian-bd a:hover .dingwei {
+        display: block;
+    }
+    
+    .title-hot {
+        height: 1000px;
+    }
+    
+    .title .tt1 {
+        width: 220px;
+        height: 32px;
+    }
+    
+    .title-hot-a {
+        height: 74px;
+        padding-top: 25px;
+        border-top: 1px solid #e9e9e9;
+    }
+    
+    .title-hot-b {
+        float: right;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+    }
+    
+    .title-hot-b a,
+    .title-hot-b div {
+        float: left;
+    }
+    
+    .title-hot-b a {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    
+    .title-hot-b a:hover+div {
+        transform: rotate(180deg);
+    }
+    
+    .title-hot-b div {
+        text-align: center;
+        line-height: 32px;
+        width: 25px;
+        height: 32px;
+        transition: all 1s;
+    }
+    
+    .title-hot-bd {
+        height: 355px;
+    }
+    
+    .title-hot-bd-l {
+        float: left;
+        width: 219px;
+        height: 355px;
+        background: url(../img/14.jpg) no-repeat;
+        background-size: 219px 355px;
+        animation: move 8s infinite;
+    }
+    
+    @keyframes move {
+        50% {
+            background: url(../img/15.jpg) no-repeat;
+            background-size: 219px 355px;
+        }
+        100% {
+            background: url(../img/16.jpg) no-repeat;
+            background-size: 219px 355px;
+        }
+    }
+    
+    .title-hot-bd-r {
+        float: left;
+        width: 868px;
+        height: 353px;
+        border: 1px solid #eee;
+        background-color: #fff;
+    }
+    
+    .title-hot-bd-r li {
+        position: relative;
+        float: left;
+        height: 176px;
+        width: 216px;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .title-hot-bd-r li:hover .title-hot-bd-r-ding {
+        z-index: 4;
+        display: block;
+    }
+    
+    .title-hot-bd-r li:nth-child(4n) {
+        border-right: none;
+    }
+    
+    .title-hot-bd-r li img {
+        display: block;
+        margin: 12px auto 0;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .title-hot-bd-r li p {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .title-hot-bd-r-ding {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 176px;
+        width: 216px;
+        background: #fff url(../img/17.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .ding2 {
+        background: #fff url(../img/18.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .ding3 {
+        background: #fff url(../img/19.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .ding4 {
+        background: #fff url(../img/20.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .ding5 {
+        background: #fff url(../img/21.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .ding6 {
+        background: #fff url(../img/22.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .ding7 {
+        background: #fff url(../img/23.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .ding8 {
+        background: #fff url(../img/24.jpg) no-repeat center 20px;
+        background-size: 72px 72px;
+    }
+    
+    .title-hot-bd-r-ding-a {
+        display: block;
+        margin: 8px 0 0px 8px;
+        width: 52px;
+        height: 20px;
+        line-height: 20px;
+        color: #999;
+        background-color: #fff;
+        border: 1px solid #999;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+    .title-hot-bd-r-ding-a:hover {
+        background-color: #f7f7f7;
+    }
+    
+    .title-hot-bd-r-ding .pp1 {
+        margin-top: 60px;
+        font-size: 12px;
+        color: #999;
+        font-weight: 400;
+    }
+    
+    .title-hot-bd-r-ding-b {
+        display: block;
+        margin: 15px auto 0;
+        width: 80px;
+        height: 36px;
+        line-height: 32px;
+        color: #ff1e3c;
+        background-color: #fff;
+        border-radius: 32px;
+        border: 2px solid #ff1e3c;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .title-hot-bd-r-ding-b:hover {
+        background-color: rgba(252, 180, 180, 0.877);
+    }
+    
+    .title-hot-bd-btm {
+        margin-top: 20px;
+        height: 451px;
+    }
+    
+    .title-hot-bd-btm-a {
+        margin-top: 40px;
+        height: 42px;
+    }
+    
+    .title-hot-bd-btm-u li {
+        float: left;
+        margin-right: 16px;
+        width: 260px;
+        height: 382px;
+    }
+    
+    .title-hot-bd-btm-u li:last-child {
+        margin-right: 0;
+    }
+    
+    .aaa1 {
+        display: block;
+        width: 260px;
+        height: 260px;
+        background: #fff url(../img/25.jpg) no-repeat center center;
+        background-size: 180px 180px;
+    }
+    
+    .a2 {
+        background: #fff url(../img/26.jpg) no-repeat center center;
+        background-size: 180px 180px;
+    }
+    
+    .a3 {
+        background: #fff url(../img/27.jpg) no-repeat center center;
+        background-size: 180px 180px;
+    }
+    
+    .a4 {
+        background: #fff url(../img/28.jpg) no-repeat center center;
+        background-size: 180px 180px;
+    }
+    
+    .aaa2 {
+        display: block;
+        margin-top: 10px;
+        padding-right: 30px;
+        height: 55px;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+    }
+    
+    .title-hot-bd-btm-d {
+        height: 24px;
+        line-height: 24px;
+    }
+    
+    .title-hot-bd-btm-u b {
+        margin-right: 5px;
+        font-size: 20px;
+        color: red;
+        font-weight: 700;
+    }
+    
+    .title-hot-bd-btm-u s {
+        font-size: 12px;
+        color: #999;
+    }
+    
+    .aaa2:hover {
+        text-decoration: underline;
+    }
+    
+    .aaa3 {
+        margin-right: 5px;
+        float: right;
+    }
+    
+    .aa4 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .foot {
+        height: 600px;
+        background-color: #fff;
+    }
+    
+    .foot-hd {
+        height: 60px;
+        padding: 49px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .foot-hd li {
+        float: left;
+        margin-left: 39px;
+        width: 233px;
+        height: 48px;
+    }
+    
+    .foot-hd-left {
+        float: left;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 2px solid #d6d6d6;
+        text-align: center;
+        line-height: 44px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 12px;
+    }
+    
+    .foot-hd-right {
+        float: left;
+    }
+    
+    .foot-hd-right h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .foot-bd {
+        padding: 45px 0 90px 0;
+        height: 140px;
+    }
+    
+    .foot-bd ul li {
+        float: left;
+        margin-left: 15px;
+        width: 101px;
+        height: 200px;
+    }
+    
+    .foot-bd ul li:first-child {
+        width: 258px;
+        margin: 0 20px 0 0;
+        background-color: #fff;
+    }
+    
+    .log {
+        display: block;
+        width: 220px;
+        height: 43px;
+        line-height: 45px;
+        margin-bottom: 20px;
+        background: url(../img/3.png) no-repeat;
+    }
+    
+    .foot-bd span {
+        display: block;
+        float: left;
+        width: 108px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .log-1,
+    .log-2 {
+        float: left;
+        width: 32px;
+        height: 32px;
+        display: block;
+        margin-left: 10px;
+        background: #fff url(../img/4.png) no-repeat;
+    }
+    
+    .log-2 {
+        background: #fff url(../img/5.png) no-repeat;
+    }
+    
+    .foot-bd dt {
+        margin: -4px 0 10px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .foot-bd .foot-bd-ul .log-dl a {
+        color: #000;
+    }
+    
+    .foot-bd .foot-bd-ul .log-dl a:hover {
+        text-decoration: underline;
+    }
+    
+    .foot-btm {
+        padding-top: 20px;
+        background-color: #333;
+        height: 152px;
+    }
+    
+    foot-btm-hd {
+        height: 152px;
+    }
+    
+    .foot-btm-hd a {
+        color: #666;
+    }
+    
+    .foot-btm-hd ul {
+        margin: 0 0 10px 140px;
+        width: 800px;
+        height: 20px;
+    }
+    
+    .foot-btm-hd-div {
+        margin: auto;
+        width: 900px;
+        clear: both;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .foot-btm-hd-div span {
+        margin-left: 20px;
+        color: #666;
+    }
+    
+    .foot-btm-hd li {
+        float: left;
+        margin-left: 20px;
+        font-size: 12px;
+        color: #666;
+    }
+    
+    .foot-btm-hd .foot-btm-hd-uul {
+        margin-top: 10px;
+        margin-left: 130px;
+        width: 900px;
+        height: 20px;
+    }
+    
+    .foot-btm-hd-uul li {
+        float: left;
+        margin: 0 10px;
+        height: 20px;
+        line-height: 20px;
+    }
+    
+    .foot-btm-hd-uul li span {
+        margin-left: 10px;
+        vertical-align: top;
+    }
+    
+    .foot-btm-hd a:hover {
+        text-decoration: underline;
+    }
+    
+    .foot-btm-hd-div1 {
+        clear: both;
+        position: relative;
+        margin: auto;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .img11 {
+        width: 80px;
+        height: 30px;
+    }
+    
+    .img22 {
+        margin-left: 10px;
+        width: 28px;
+        height: 30px;
+    }
+    
+    .da,
+    .da1 {
+        display: none;
+        position: absolute;
+        width: 140px;
+        height: 160px;
+    }
+    
+    .da {
+        top: 135px;
+        left: 65px;
+    }
+    
+    .da1 {
+        top: 135px;
+        left: 105px;
+    }
+    
+    .xiangs-left,
+    .xiangs-right {
+        width: 140px;
+        height: 140px;
+        background-color: #f7f7f7;
+        text-align: center;
+    }
+    
+    .left,
+    .right {
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #f7f7f7 transparent;
+    }
+    
+    .log-1:hover+.da,
+    .log-2:hover+.da1 {
+        display: block;
+    }
+    
+    .asde {
+        position: absolute;
+        top: 770px;
+        left: 75px;
+        width: 100px;
+        height: 672px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+    
+    .asde-a {
+        display: block;
+        width: 100px;
+        height: 50px;
+        border-bottom: 1px solid #ccc;
+        background: url(../img/29.jpg) no-repeat;
+        background-size: 100px 50px;
+    }
+    
+    .asde-b {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 9px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .asde-b:hover {
+        background-color: #ccc;
+        color: red;
+    }
+    
+    .daul li a {
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 9px;
+        font-size: 12px;
+        color: #999;
+    }
+    
+    .daul li a:hover {
+        background-color: #ccc;
+        color: red;
+    }
+    
+    .adse-c {
+        display: block;
+        width: 100px;
+        height: 198px;
+        background: url(../img/10.png) no-repeat;
+        background-size: 100px 198px;
+    }
+    
+    .asde-right {
+        position: absolute;
+        top: 770px;
+        right: 75px;
+        width: 62px;
+        height: 243px;
+    }
+    
+    .asde-right li a {
+        display: block;
+        width: 62px;
+        height: 48px;
+        padding: 12px 0 0;
+        border-bottom: 1px solid #eaeaea;
+        background: #fff;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .asde-right li a:hover {
+        background-color: #ccc;
+    }
+    
+    .asde-right li a:hover span {
+        color: red;
+    }
+    
+    .asde-right li img {
+        margin: auto;
+        display: block;
+    }
+    
+    .shousuo {
+        display: none;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+    }
+    
+    .shousuo-bd {
+        margin: auto;
+        height: 50px;
+        width: 1090px;
+        line-height: 50px;
+    }
+    
+    .shousuo-bd-l {
+        display: block;
+        float: left;
+        width: 162px;
+        height: 40px;
+        background: url(../img/3.png) no-repeat;
+        background-size: 130px 40px;
+    }
+    
+    .shousuo-bd-r {
+        float: left;
+        margin: 5px 0 0 170px;
+        width: 510px;
+        height: 40px;
+        line-height: 40px;
+        border: 2px solid #ff2337;
+        border-radius: 40px;
+    }
+    
+    .shousuo-bd-r .icon-fangdajing1 {
+        margin-left: 10px;
+        width: 14px;
+        height: 14px;
+        color: #ccc;
+    }
+    
+    .shousuo-bd-r input {
+        margin-left: 4px;
+        width: 410px;
+        height: 24px;
+        outline: none;
+        border: none;
+    }
+    
+    .shousuo-bd-r button {
+        float: right;
+        width: 60px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        color: #fff;
+        background-color: red;
+    }
